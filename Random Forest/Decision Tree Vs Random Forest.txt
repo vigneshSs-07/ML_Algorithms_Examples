@@ -1,0 +1,56 @@
+Decision Tree :
+
+How are decision tree built?
+
+1. It splits nodes based on available input variables. Selects the input variable resulting in best homogenous dataset. CART — Classification and Regression Tree 
+   which uses Gini Index(impurity measure) and Information Gain Index to build trees.
+
+What is Gini Index?
+
+1. Gini Index is a measure of node purity or impurity. It is a measure of how often a randomly chosen variable will be misclassified.
+
+What is Information Gain?
+
+1. Information Gain is the difference between uncertainty of the starting node and weighted impurity of the two child nodes. 
+   Information gain decides which feature should be used to split the data.
+
+Advantages of decision tree :
+
+    * Easy to interpret. Straightforward graphical visualization is intuitive makes it easy for anyone to understand
+    * Useful to identify variables most helpful in prediction. It splits based on the attribute significance.
+    * Handles both continuous and categorical targets attributes.
+    * Performs well on large datasets
+
+Disadvantages of decision tree :
+
+    * Decision trees are prone to overfitting
+    * Gives most optimal solution but not globally optimal solution
+    * Decision trees do not have same predictive accuracy compared to other regression and classification models
+
+
+What is Random Forest?
+
+1. Random Forest increases predictive power of the algorithm and also helps prevent overfitting.It is an ensemble of randomized decision trees. 
+   Each decision tree gives a vote for the prediction of target variable. Random forest choses the prediction that gets the most vote.
+
+Random forests reduce the variance seen in decision trees by:
+
+1. Using different samples for training,
+2. Specifying random feature subsets.(Random sampling and Feature sampling)
+3. Building and combining small (shallow) trees.
+
+Advantages of Random Forest
+
+    * High predictive accuracy.
+    * Efficient on large datasets
+    * Ability to handle multiple input features without need for feature deletion
+    * Prediction is based on input features considered important for classification.
+    * Works well with missing data still giving a better predictive accuracy
+
+Disadvantages of random forest
+
+    * Not easily interpretable
+    * Random forest overfit with noisy classification or regression
+
+Random forests are commonly reported as the most accurate learning algorithm. 
+
