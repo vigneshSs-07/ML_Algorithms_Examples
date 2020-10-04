@@ -12,3 +12,9 @@ Types
 3. Bernoulli NB :
 	-> features are binary
 	-> penalize non occurence of features.
+
+P(A|B) − It is also called the posterior probability i.e. the probability of first event i.e. A to occur given that second event i.e. B occurred.
+
+P(B|A) − It is the probability of second event i.e. B to occur after first event i.e. A occurred.
+
+P(A), P(B) − It is also called prior probability i.e. the probability of first event i.e. A or second event i.e. B to occur.

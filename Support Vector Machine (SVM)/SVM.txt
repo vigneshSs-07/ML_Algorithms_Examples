@@ -1,0 +1,13 @@
+Support Vector Machine” (SVM) is a supervised machine learning algorithm which can be used for both classification or regression challenges.
+-> However, it is mostly used in classification problems.
+-> In the SVM algorithm, we plot each data item as a point in an n-dimensional space (where n is the number of features you have). 
+-> The value of each feature here is the value of a particular coordinate. Then, we perform classification by finding the plane that differentiates the two classes very well 
+
+The main advantages of using the SVM algorithm are:
+
+    It works really well with a clear margin of separation
+    It is effective in high dimensional spaces.
+    It is effective in cases where the number of dimensions is greater than the number of samples.
+    It uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
+
+
