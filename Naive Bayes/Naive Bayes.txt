@@ -1,0 +1,14 @@
+Naive bayes is a probabilistic algorithm. Calculate probability of each class for every observation.
+
+Types 
+
+1. Gaussian NB :
+	-> when variables are continuous
+	-> Assumes a normal distrubtion
+2. Multinomail NB :
+	-> features represnt frequency
+	-> ignores non occurence of features
+	-> text classification problems
+3. Bernoulli NB :
+	-> features are binary
+	-> penalize non occurence of features.
