@@ -1,0 +1,19 @@
+Logistic Regression :
+
+---> Logistic regression is about predicting binary variables i.e when the target variable is categorical.
+---> The aim of logistic regression is to predict some unknown probability P for a successful event, for any given linear combination of independent variables (features).
+---> the output is natural logarithm of the odds , also known as logit. The base of the logarithm is not important but taking logarithm of odds is.
+
+odds : 
+-> Higher the odds, better is the chance for success. Range of odds can be any number between [0 , ∞]. 
+
+Odds ratio :
+-> is the ratio of odds. 
+-> odds ratio can vary between 0 to positive infinity, log (odds ratio) will vary between [-∞, ∞]. 
+   Specifically when odds ratio lies between [0,1], log (odds ratio) is negative.
+
+
+-> Bernoulli distribution is a discrete distribution with two possible outcomes labelled by n=0 and n=1, in which n=1 (successful event) occurs with probability P and failure i.e.
+   n=0 occurs with a probability 1-P. 
+-> The dependent variable in logistic regression follows Bernoulli distribution having an unknown probability P. Therefore, the logit i.e. log of odds, links the independent variables 
+   (Xs) to the Bernoulli distribution. 
