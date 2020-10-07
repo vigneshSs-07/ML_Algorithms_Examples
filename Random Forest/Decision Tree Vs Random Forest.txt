@@ -30,7 +30,13 @@ Disadvantages of decision tree :
 
 What is Random Forest?
 
-1. Random Forest increases predictive power of the algorithm and also helps prevent overfitting.It is an ensemble of randomized decision trees. 
+1. Random forest adds additional randomness to the model, while growing the trees. 
+2. Instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
+   This results in a wide diversity that generally results in a better model.
+3. In random forest, only a random subset of the features is taken into consideration by the algorithm for splitting a node. 
+   You can even make trees more random by additionally using random thresholds for each feature rather than searching for 
+   the best possible thresholds (like a normal decision tree does).
+4. Random Forest increases predictive power of the algorithm and also helps prevent overfitting.It is an ensemble of randomized decision trees. 
    Each decision tree gives a vote for the prediction of target variable. Random forest choses the prediction that gets the most vote.
 
 Random forests reduce the variance seen in decision trees by:
@@ -38,6 +44,26 @@ Random forests reduce the variance seen in decision trees by:
 1. Using different samples for training,
 2. Specifying random feature subsets.(Random sampling and Feature sampling)
 3. Building and combining small (shallow) trees.
+
+Important Hyperparameters:
+
+
+    max_depth
+    min_sample_split ->(a parameter that tells the decision tree in a random forest the minimum required number of observations in any given node in order to split it.)
+    max_leaf_nodes -> (This hyperparameter sets a condition on the splitting of the nodes in the tree and hence restricts the growth of the tree.)
+    min_samples_leaf -> (specifies the minimum number of samples that should be present in the leaf node after splitting a node)
+    n_estimators ->(which is just the number of trees the algorithm builds before taking the maximum voting or taking the averages of predictions.)
+    max_sample (bootstrap sample)-> (determines what fraction of the original dataset is given to any individual tree)
+    max_features -> ( resembles the number of maximum features provided to each tree in a random forest.)
+
+1. Increasing the predictive power:
+ 	1. n_estimators 
+	2. max_features
+	3. min_sample_leaf
+2. Increasing the model's speed
+	1.n_jobs 
+	2.random_state 
+	3.oob_score 
 
 Advantages of Random Forest
 
@@ -49,8 +75,14 @@ Advantages of Random Forest
 
 Disadvantages of random forest
 
+    * The main limitation of random forest is that a large number of trees can make the algorithm too slow and ineffective for real-time predictions. 
+      In general, these algorithms are fast to train, but quite slow to create predictions once they are trained. 
+      A more accurate prediction requires more trees, which results in a slower model.
     * Not easily interpretable
     * Random forest overfit with noisy classification or regression
 
 Random forests are commonly reported as the most accurate learning algorithm. 
 
+
+https://builtin.com/data-science/random-forest-algorithm
+https://www.analyticsvidhya.com/blog/2020/03/beginners-guide-random-forest-hyperparameter-tuning/
